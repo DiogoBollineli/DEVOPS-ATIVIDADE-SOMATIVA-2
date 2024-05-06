@@ -69,4 +69,4 @@ jobs:
         run: docker pull ${{secrets.DOCKER_USERNAME}}/${{secrets.DOCKER_IMAGE}}:${{secrets.TAG}}
       - name: Run Docker container 
         run: |
-          docker run -d -p 8080:80 ${{secrets.DOCKER_USERNAME}}/${{secrets.DOCKER_IMAGE}}:${{secrets.TAG}}
+          docker run -d -p 8080:80 ${{secrets.DOCKER_USERNAME}}/${{secrets.DOCKER_IMAGE}}:${{secrets.TAG}}    #deploy
